@@ -12,4 +12,4 @@ services:
       - localstack
     volumes:
       - ".:/app"
-    command: "sh -c 'composer install && php test.php'"
+    command: 'sh /app/run.sh'
