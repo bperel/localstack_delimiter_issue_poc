@@ -1,0 +1,15 @@
+services:
+  localstack:
+    image: localstack/localstack
+    environment:
+      REGION: eu-central-1
+      SERVICES: s3
+    volumes:
+      - "./entrypoint-s3.sh:/docker-entrypoint-initaws.d/entrypoint-s3.sh"
+  php:
+    image: composer
+    depends_on:
+      - localstack
+    volumes:
+      - ".:/app"
+    command: "sh -c 'composer install && php test.php'"

@@ -1,0 +1,10 @@
+{
+  "name": "local/poc_localstack",
+  "description": "",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "league/flysystem-aws-s3-v3": "^1.0",
+    "aws/aws-sdk-php": "^3.152.0"
+  }
+}
