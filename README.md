@@ -1,4 +1,4 @@
-This is a POC for issue [localstack/localstack/issues/2535](https://github.com/localstack/localstack/issues/2535).
+This is a POC for issue [localstack/localstack/issues/3613](https://github.com/localstack/localstack/issues/3613).
 
 To test it, pull the repo and run: `docker-compose run --rm php`
 
